@@ -20,7 +20,7 @@ resource "aws_ecs_task_definition" "main" {
 
       essential = true
 
-      portMapping = [
+      portMappings = [
         {
           containerPort = var.service_port
           hostPort      = var.service_port
